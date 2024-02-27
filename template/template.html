@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PDF Template</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+      .center {
+        text-align: center;
+        margin: 0;
+      }
+      .info p {
+        margin-block: 30px;
+      }
+      p.center {
+        font-size: 13px;
+      }
+      h2 {
+        font-size: 21px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="http://localhost:5000/uploads/snr_logo.jpeg"
+          alt=""
+          width="70px"
+          height="70px"
+        />
+        <div>
+          <h2 class="center">SRI RAMAKRISHNA ENGINEERING COLLEGE</h2>
+          <p class="center">[Educational Service: SNR Sons Charitable Trust]</p>
+          <p class="center">
+            [Autonomous Institution, Accredited by NAAC with ‘A+’ Grade]
+          </p>
+          <p class="center">
+            [Approved by AICTE and Permanently Affiliated to Anna University,
+            Chennai]
+          </p>
+          <p class="center">
+            [ISO 9001:2015 Certified and all eligible programmes Accredited by
+            NBA]
+          </p>
+          <p class="center">
+            VATTAMALAIPALAYAM, N.G.G.O. COLONY POST, COIMBATORE – 641022.
+          </p>
+        </div>
+        <img
+          src="http://localhost:5000/uploads/srec_logo.jpeg"
+          alt=""
+          width="70px"
+          height="65px"
+        />
+      </div>
+      <div class="info">
+        <p style="text-align: end; font-size: 18px; font-weight: bold">
+          {{date}}
+        </p>
+        <h2
+          style="
+            text-align: center;
+            font-size: 18px;
+            text-decoration: underline;
+          "
+        >
+          TO WHOMEVER IT MAY CONCERN
+        </h2>
+        <p style="text-indent: 50px; line-height: 30px; font-size: 18px">
+          Certified that <strong>{{name}} ({{rollNumber}})</strong> is a
+          bonafide student of this college and studying in {{year}} year
+          <strong>{{degree}} {{programme}}</strong> during the academic year
+          2024 - 2025
+        </p>
+        <p style="text-indent: 50px; line-height: 30px; font-size: 18px">
+          This certificate is issued to enable {{pronoun}} {{reason}}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
